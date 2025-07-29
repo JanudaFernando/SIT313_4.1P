@@ -1,6 +1,21 @@
 # DEV@DEAKIN - Developer Community Platform
 
-A modern React-based web application for the Deakin University developer community, featuring articles, tutorials, and user engagement tools.
+## SIT313 Assignment 4.1P
+
+A modern React-based web application for the Deakin University developer community, featuring articles, tutorials, and user engagement tools. This project is developed as part of the SIT313 - Fullstack Development course assignment 4.1P.
+
+## 📚 Assignment Overview
+
+This project demonstrates the implementation of a full-stack React application as part of **SIT313 Assignment 4.1P**. The application showcases:
+
+- Modern React development practices
+- Component-based architecture
+- Responsive web design principles
+- Dynamic content generation
+- Form validation and user interaction
+- Professional UI/UX design
+
+**Academic Context**: This assignment focuses on developing secure frontend applications using React, implementing best practices for modern web development within the Deakin University curriculum.
 
 ## 🚀 Features
 
@@ -173,7 +188,14 @@ The application is fully responsive with:
 
 ## 📄 License
 
-This project is part of the SIT313 - Fullstack Development course at Deakin University.
+This project is developed as **Assignment 4.1P** for the **SIT313 - Fullstack Development** course at Deakin University.
+
+### Assignment Details
+
+- **Course**: SIT313 - Fullstack Development Secure Frontend Applications
+- **Task**: 4.1P - React Application Development
+- **Academic Year**: 2025
+- **Institution**: Deakin University
 
 ## 👥 Author
 
@@ -182,10 +204,11 @@ This project is part of the SIT313 - Fullstack Development course at Deakin Univ
 - GitHub: [@JanudaFernando](https://github.com/JanudaFernando)
 - University: Deakin University
 - Course: SIT313 - Fullstack Development
+- Assignment: 4.1P
 
 ---
 
-**Built with ❤️ for the Deakin University developer community**
+**Built with ❤️ for SIT313 Assignment 4.1P - Deakin University**
 
 ### `npm run build`
 
