@@ -9,6 +9,7 @@ import ButtonArticle from "./components/ButtonArticle";
 import TutorialImage from "./components/TutorialImage";
 import EmailSubscribe from "./components/EmailSubscribe";
 import Footer from "./components/Footer";
+import ButtonTutorial from "./components/ButtonTutorial";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -20,7 +21,7 @@ root.render(
     <ButtonArticle />
     <h1 className="featuredTitle">Featured Tutorials</h1>
     <TutorialImage />
-    <ButtonArticle />
+    <ButtonTutorial />
     <EmailSubscribe />
     <Footer/>
   </div>

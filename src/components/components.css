@@ -1,14 +1,107 @@
+/* Navigation Bar Styles */
 .navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 12px 24px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navBrand h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  letter-spacing: -0.5px;
+}
+
+.navCenter {
+  flex: 1;
+  max-width: 500px;
+  margin: 0 20px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navButton {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: transparent;
+  color: #333;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.navButton:hover {
+  background-color: #f8f9fa;
+  border-color: #bbb;
+}
+
+.navButtonPrimary {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.navButtonPrimary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Search Bar Styles */
+.searchBar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 40px 10px 16px;
+  border: 1px solid #ddd;
+  border-radius: 24px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.searchInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.searchIcon {
+  position: absolute;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.searchIcon:hover {
+  opacity: 1;
 }
 
 .mainImage {
   width: 1425px;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
+  object-position: center top;
 }
 
 .featuredTitle {
@@ -218,62 +311,123 @@
   font-size: 14px;
 }
 
+/* Footer Styles */
 .footer {
-  background-color: #339e4c;
+  background-color: #2c3e50;
+  color: white;
+  margin-top: 40px;
 }
 
-.dev h6 {
-  display: flex;
-}
-
-.footerHead {
+.footerContent {
   display: flex;
   justify-content: space-between;
-  padding: 40px 50px;
-  align-items: flex-start;
+  padding: 40px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
 }
 
-.footer1 {
+.footerSection {
   flex: 1;
-  text-align: left;
 }
 
-.footer2 {
-  flex: 1;
-  text-align: center;
+.footerSection h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ecf0f1;
 }
 
-.footer3 {
-  flex: 1;
-  text-align: right;
+.footerSection ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.socialMedia {
+.footerSection ul li {
+  padding: 6px 0;
+  color: #bdc3c7;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footerSection ul li:hover {
+  color: #3498db;
+}
+
+.socialLinks {
   display: flex;
-  height: 50px;
   gap: 15px;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.socialMedia img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-.dev {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.devLinks {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
   margin-top: 10px;
 }
 
-.devLinks h6 {
-  margin: 0;
+.socialButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.socialButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socialButton img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.footerBottom {
+  background-color: #1a252f;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #34495e;
+}
+
+.footerBrand span {
+  font-weight: 600;
+  color: #ecf0f1;
+}
+
+.footerLegal {
+  display: flex;
+  gap: 25px;
+}
+
+.legalButton {
+  background: none;
+  border: none;
+  color: #bdc3c7;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.legalButton:hover {
+  color: #3498db;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .footerBottom {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footerLegal {
+    justify-content: center;
+  }
 }
