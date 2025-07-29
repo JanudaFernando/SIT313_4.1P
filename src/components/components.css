@@ -6,7 +6,7 @@
 }
 
 .mainImage {
-  width: 100vw;
+  width: 1425px;
   height: 400px;
   object-fit: cover;
 }
@@ -218,4 +218,64 @@
 .successMessage p {
   margin: 0;
   font-size: 14px;
+}
+
+.footer {
+  background-color: #339e4c;
+}
+
+.dev h6 {
+  display: flex;
+}
+
+.footerHead {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 50px;
+  align-items: flex-start;
+}
+
+.footer1 {
+  flex: 1;
+  text-align: left;
+}
+
+.footer2 {
+  flex: 1;
+  text-align: center;
+}
+
+.footer3 {
+  flex: 1;
+  text-align: right;
+}
+
+.socialMedia {
+  display: flex;
+  height: 50px;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.socialMedia img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.dev {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.devLinks {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.devLinks h6 {
+  margin: 0;
 }

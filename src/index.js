@@ -8,6 +8,7 @@ import ArticleImage from "./components/ArticleImage";
 import ButtonArticle from "./components/ButtonArticle";
 import TutorialImage from "./components/TutorialImage";
 import EmailSubscribe from "./components/EmailSubscribe";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -21,5 +22,6 @@ root.render(
     <TutorialImage />
     <ButtonArticle />
     <EmailSubscribe />
+    <Footer/>
   </div>
 );
