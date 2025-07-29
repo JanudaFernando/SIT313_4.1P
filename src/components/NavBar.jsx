@@ -1,14 +1,15 @@
 import React from 'react'
+import './components.css'
+import SearchBar from './SearchBar'
 
 function NavBar() {
   return (
-    <div>
+    <div className="navBar">
       <h1>DEV@DEAKIN</h1>
-      <img src={require('../img/search.png')} alt="Search" /> 
-      <h3>Search...</h3>   
+      <SearchBar />
       <h1>Post</h1>
       <h1>Login</h1>
-      </div>
+    </div>
   )
 }
 

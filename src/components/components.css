@@ -1,0 +1,221 @@
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.mainImage {
+  width: 100vw;
+  height: 400px;
+  object-fit: cover;
+}
+
+.featuredTitle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.articleContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.loadingButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.cardGroup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  width: 300px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.cardImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.cardContent {
+  padding: 15px;
+  text-align: left;
+}
+
+.cardHeader {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.cardMeta,
+.cardDescription,
+.cardAuthor {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.placeholder {
+  padding: 15px;
+}
+
+.placeholderImage {
+  width: 100%;
+  height: 200px;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.placeholderContent .placeholderLine {
+  height: 12px;
+  background-color: #ccc;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+.placeholderLine.short {
+  width: 40%;
+}
+.placeholderLine.medium {
+  width: 60%;
+}
+.placeholderLine.long {
+  width: 80%;
+}
+
+/* Button Article Styles */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.seeAllButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.seeAllButton:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.seeAllButton:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Email Subscribe Styles */
+.emailSubscribeContainer {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  text-align: center;
+  margin: 30px 0;
+  border: 1px solid #e9ecef;
+}
+
+.subscribeContent {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribeTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.subscribeDescription {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.subscribeForm {
+  margin-top: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 10px;
+}
+
+.emailInput {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.emailInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.subscribeButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.subscribeButton:hover {
+  background-color: #0056b3;
+}
+
+.errorMessage {
+  color: #dc3545;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.successMessage {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #c3e6cb;
+}
+
+.successMessage h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.successMessage p {
+  margin: 0;
+  font-size: 14px;
+}
