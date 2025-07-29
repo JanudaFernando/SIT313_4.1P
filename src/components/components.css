@@ -100,7 +100,6 @@
   width: 80%;
 }
 
-/* Button Article Styles */
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -131,7 +130,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Email Subscribe Styles */
 .emailSubscribeContainer {
   background-color: #f8f9fa;
   padding: 40px 20px;
