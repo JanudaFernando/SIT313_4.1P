@@ -1,7 +1,51 @@
 import React from 'react'
 import './components.css'
 
-class EmailSubscribe {
+class EmailSubscribe extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            email: '',
+            isSubscribed: false,
+            error: ''
+        }
+    }
+
+    handleEmailChange = (e) => {
+        this.setState({
+            email: e.target.value,
+            error: '' // Clear error when user starts typing
+        })
+    }
+
+    handleSubmit = (e) => {
+        e.preventDefault()
+
+        if (!this.state.email) {
+            this.setState({ error: 'Please enter your email address' })
+            return
+        }
+
+        // Simple email validation
+        if (!this.state.email.includes('@')) {
+            this.setState({ error: 'Please enter a valid email address' })
+            return
+        }
+
+        // Simulate API call
+        console.log('Subscribing email:', this.state.email)
+        this.setState({
+            isSubscribed: true,
+            email: '',
+            error: ''
+        })
+
+        // Reset success message after 3 seconds
+        setTimeout(() => {
+            this.setState({ isSubscribed: false })
+        }, 3000)
+    }
+
     render() {
         return (
             <div className="emailSubscribeContainer">
@@ -17,7 +61,7 @@ class EmailSubscribe {
                             <p>You'll receive our latest updates in your inbox.</p>
                         </div>
                     ) : (
-                        <form className="subscribeForm">
+                        <form onSubmit={this.handleSubmit} className="subscribeForm">
                             <div className="inputGroup">
                                 <input
                                     type="email"
@@ -30,6 +74,7 @@ class EmailSubscribe {
                                     Subscribe
                                 </button>
                             </div>
+                            {this.state.error && <p className="errorMessage">{this.state.error}</p>}
                         </form>
                     )}
                 </div>
